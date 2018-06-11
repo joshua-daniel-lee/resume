@@ -13,7 +13,7 @@ class Header extends Component {
         <AppBar position="static">
           <Toolbar>
             <Typography variant="title" color="secondary">
-              Joshua Daniel Lee
+              logo
             </Typography>
           </Toolbar>
         </AppBar>

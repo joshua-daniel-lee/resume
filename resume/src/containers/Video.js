@@ -9,7 +9,10 @@ class Video extends Component {
     return (
       <div className="video">
         <div className="background-image">
-          <div className="callout">Hello World</div>
+          <a href="/" className="logo">
+            Joshua Lee
+          </a>
+          <div className="callout"> </div>
         </div>
       </div>
     );
