@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 
 class Video extends Component {
-  constructor() {
-    super();
-  }
+  // constructor() {
+  //   super();
+  // }
 
   render() {
-    return <div className="video" />;
+    return (
+      <div className="video">
+        <div className="background-image">
+          <div className="callout">Hello World</div>
+        </div>
+      </div>
+    );
   }
 }
 
