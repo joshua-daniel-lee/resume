@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 0.3rem;
+  background-color: #193549;
 }
 
 /* STYLES FOR THE HEADER */
@@ -103,7 +104,58 @@
 .about {
   grid-column: 1 / 5;
   grid-row: 2;
-  height: 100vh;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.aboutData {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+
+/* STYLES FOR THE STACK SECTION */
+.stack {
+  grid-column: 1 / 5;
+  grid-row: 3;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.stackData {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+
+/* STYLES FOR THE CONTACT SECTION */
+.contact {
+  grid-column: 1 / 5;
+  grid-row: 4;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.contactData {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+
+/* STYLES FOR THE FOOTER SECTION */
+.footer {
+  grid-column: 1 / 5;
+  grid-row: 5;
+  height: 25vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;

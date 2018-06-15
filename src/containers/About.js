@@ -9,7 +9,9 @@ class About extends Component {
   render() {
     return (
       <div className="about">
-        <Paper elevation={4}>hello world</Paper>
+        <Paper className="aboutData" elevation={4}>
+          about
+        </Paper>
       </div>
     );
   }

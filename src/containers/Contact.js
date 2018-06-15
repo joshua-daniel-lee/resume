@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Paper from "@material-ui/core/Paper";
 
 class Contact extends Component {
   // constructor() {
@@ -6,7 +7,13 @@ class Contact extends Component {
   // }
 
   render() {
-    return <div className="contact" />;
+    return (
+      <div className="contact">
+        <Paper className="contactData" elevation={4}>
+          contact
+        </Paper>
+      </div>
+    );
   }
 }
 
