@@ -1,14 +1,15 @@
 import React, { Component } from "react";
+import "./image.css";
 import Button from "@material-ui/core/Button";
 
-class Video extends Component {
+class Image extends Component {
   constructor() {
     super();
   }
 
   render() {
     return (
-      <div className="video">
+      <div className="image">
         <div className="background-image">
           <a href="/" className="logo">
             Joshua Lee
@@ -29,4 +30,4 @@ class Video extends Component {
   }
 }
 
-export default Video;
+export default Image;

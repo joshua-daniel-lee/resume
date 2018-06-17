@@ -1,0 +1,42 @@
+/* STYLES FOR THE ABOUT SECTION */
+.about {
+  grid-column: 1 / 5;
+  grid-row: 2;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(51, 1fr);
+  grid-template-rows: repeat(51, 1fr);
+}
+
+.aboutDataOne {
+  grid-column-start: 2;
+  grid-column-end: 26;
+  grid-row-start: 2;
+  grid-row-end: 50;
+}
+
+.aboutDataTwo {
+  grid-column-start: 27;
+  grid-column-end: 51;
+  grid-row-start: 2;
+  grid-row-end: 50;
+}
+
+@media only screen and (max-width: 800px) {
+  .about {
+    height: 100vh;
+  }
+  .aboutDataOne {
+    grid-column-start: 2;
+    grid-column-end: 51;
+    grid-row-start: 2;
+    grid-row-end: 26;
+  }
+
+  .aboutDataTwo {
+    grid-column-start: 2;
+    grid-column-end: 51;
+    grid-row-start: 27;
+    grid-row-end: 51;
+  }
+}

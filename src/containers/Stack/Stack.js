@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./stack.css";
 import Paper from "@material-ui/core/Paper";
 
 class Stack extends Component {

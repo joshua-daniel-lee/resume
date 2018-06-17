@@ -1,0 +1,9 @@
+/* STYLES FOR THE FOOTER SECTION */
+.footer {
+  grid-column: 1 / 5;
+  grid-row: 5;
+  height: 25vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}

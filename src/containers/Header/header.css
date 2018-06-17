@@ -1,0 +1,6 @@
+/* STYLES FOR THE HEADER */
+.header {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  z-index: 1;
+}

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import "./about.css";
 import Paper from "@material-ui/core/Paper";
-import Avatar from "@material-ui/core/Avatar";
 
 class About extends Component {
   // constructor() {
