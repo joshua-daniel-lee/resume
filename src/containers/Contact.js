@@ -9,9 +9,7 @@ class Contact extends Component {
   render() {
     return (
       <div className="contact">
-        <Paper className="contactData" elevation={4}>
-          contact
-        </Paper>
+        <div className="contactData" />
       </div>
     );
   }

@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 0.3rem;
-  background-color: #193549;
 }
 
 /* STYLES FOR THE HEADER */
@@ -39,8 +38,12 @@
   grid-row-start: 6;
   grid-row-end: 7;
   z-index: 1;
-  opacity: 0.5;
+  opacity: 0.8;
   background-color: yellow;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -90,7 +93,7 @@
   text-shadow: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .logo {
     grid-column-start: 1;
     grid-column-end: 6;
@@ -100,21 +103,66 @@
   }
 }
 
+.contactButton {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactButton {
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+}
+
+.tagLine {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+}
+
 /* STYLES FOR THE ABOUT SECTION */
 .about {
   grid-column: 1 / 5;
   grid-row: 2;
   height: 50vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(51, 1fr);
+  grid-template-rows: repeat(51, 1fr);
 }
 
-.aboutData {
-  grid-column-start: 1;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 7;
+.aboutDataOne {
+  grid-column-start: 2;
+  grid-column-end: 26;
+  grid-row-start: 2;
+  grid-row-end: 50;
+}
+
+.aboutDataTwo {
+  grid-column-start: 27;
+  grid-column-end: 51;
+  grid-row-start: 2;
+  grid-row-end: 50;
+}
+
+@media only screen and (max-width: 800px) {
+  .about {
+    height: 100vh;
+  }
+  .aboutDataOne {
+    grid-column-start: 2;
+    grid-column-end: 51;
+    grid-row-start: 2;
+    grid-row-end: 26;
+  }
+
+  .aboutDataTwo {
+    grid-column-start: 2;
+    grid-column-end: 51;
+    grid-row-start: 27;
+    grid-row-end: 51;
+  }
 }
 
 /* STYLES FOR THE STACK SECTION */
@@ -123,32 +171,41 @@
   grid-row: 3;
   height: 50vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(51, 1fr);
+  grid-template-rows: repeat(51, 1fr);
 }
 
-.stackData {
-  grid-column-start: 1;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 7;
+.stackDataOne {
+  grid-column-start: 2;
+  grid-column-end: 26;
+  grid-row-start: 2;
+  grid-row-end: 50;
 }
 
-/* STYLES FOR THE CONTACT SECTION */
-.contact {
-  grid-column: 1 / 5;
-  grid-row: 4;
-  height: 50vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+.stackDataTwo {
+  grid-column-start: 27;
+  grid-column-end: 51;
+  grid-row-start: 2;
+  grid-row-end: 50;
 }
 
-.contactData {
-  grid-column-start: 1;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 7;
+@media only screen and (max-width: 800px) {
+  .stack {
+    height: 100vh;
+  }
+  .stackDataOne {
+    grid-column-start: 2;
+    grid-column-end: 51;
+    grid-row-start: 2;
+    grid-row-end: 26;
+  }
+
+  .stackDataTwo {
+    grid-column-start: 2;
+    grid-column-end: 51;
+    grid-row-start: 27;
+    grid-row-end: 51;
+  }
 }
 
 /* STYLES FOR THE FOOTER SECTION */

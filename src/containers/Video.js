@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import Button from "@material-ui/core/Button";
 
 class Video extends Component {
-  // constructor() {
-  //   super();
-  // }
+  constructor() {
+    super();
+  }
 
   render() {
     return (
@@ -12,7 +13,16 @@ class Video extends Component {
           <a href="/" className="logo">
             Joshua Lee
           </a>
-          <div className="callout"> </div>
+          <div className="callout">
+            <h2 className="tagLine">Have a project idea?</h2>
+            <Button
+              className="contactButton"
+              variant="contained"
+              color="primary"
+            >
+              Contact Me
+            </Button>
+          </div>
         </div>
       </div>
     );

@@ -9,9 +9,8 @@ class Stack extends Component {
   render() {
     return (
       <div className="stack">
-        <Paper className="stackData" elevation={4}>
-          stack
-        </Paper>
+        <Paper className="stackDataOne" elevation={8} />
+        <Paper className="stackDataTwo" elevation={8} />
       </div>
     );
   }
