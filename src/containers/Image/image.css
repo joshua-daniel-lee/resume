@@ -100,9 +100,3 @@
     grid-column-end: 5;
   }
 }
-
-.tagLine {
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: 1;
-}
