@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  background-image: url("../../assets/backgroundImage2.jpg");
+  background-image: url("../../assets/backgroundImage.jpg");
   grid-column: 1 / 5;
   grid-row: 1;
   height: 100vh;
