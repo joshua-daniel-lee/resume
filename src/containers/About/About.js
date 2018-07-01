@@ -11,7 +11,6 @@ function About(props) {
       <div className="aboutContentTwo" />
       <Paper className="aboutContainerOne" elevation={8} />
       <Paper className="aboutContainerTwo" elevation={8} />
-      <img className="imageLogo" src={Logo} alt="Logo" />
     </div>
   );
 }
