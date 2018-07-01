@@ -4,14 +4,22 @@
   grid-row: 2;
   height: 50vh;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(10, 1fr);
 }
 
 .aboutContainerOne {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 11;
 }
 
 .aboutContainerTwo {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 11;
 }
 
 .aboutContentOne {
@@ -24,6 +32,12 @@
 }
 
 .aboutData {
+}
+
+.imageLogo {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 4;
 }
 
 @media only screen and (max-width: 800px) {
