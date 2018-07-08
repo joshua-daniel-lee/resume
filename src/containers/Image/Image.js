@@ -12,9 +12,6 @@ function Image(props) {
         </a>
         <div className="callout">
           <Email />
-          <Button className="contactButton" variant="contained" color="primary">
-            Contact Me
-          </Button>
         </div>
       </div>
     </div>
