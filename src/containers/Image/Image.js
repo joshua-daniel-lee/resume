@@ -1,7 +1,6 @@
 import React from "react";
 import Email from "../Email/Email";
 import "./image.css";
-import Button from "@material-ui/core/Button";
 
 function Image(props) {
   return (

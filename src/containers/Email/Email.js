@@ -6,9 +6,9 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import "../Image/image.css";
+import "./email.css";
 
-export default class Email extends React.Component {
+class Email extends React.Component {
   state = {
     open: false
   };
@@ -23,9 +23,8 @@ export default class Email extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="contactButton">
         <Button
-          className="contactButton"
           variant="contained"
           color="primary"
           onClick={this.handleClickOpen}
@@ -37,27 +36,28 @@ export default class Email extends React.Component {
           onClose={this.handleClose}
           aria-labelledby="form-dialog-title"
         >
-          <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+          <DialogTitle id="form-dialog-title">Contact Me</DialogTitle>
           <DialogContent>
             <DialogContentText>
-              To subscribe to this website, please enter your email address
-              here. We will send updates occasionally.
+              To send me a message, please enter your email address and message
+              below. I will get back to you as soon as possible.
             </DialogContentText>
             <TextField
               autoFocus
               margin="dense"
-              id="name"
+              id="email"
               label="Email Address"
               type="email"
               fullWidth
             />
+            <TextField margin="dense" id="message" label="Message" fullWidth />
           </DialogContent>
           <DialogActions>
             <Button onClick={this.handleClose} color="primary">
               Cancel
             </Button>
             <Button onClick={this.handleClose} color="primary">
-              Subscribe
+              Send
             </Button>
           </DialogActions>
         </Dialog>
@@ -65,3 +65,5 @@ export default class Email extends React.Component {
     );
   }
 }
+
+export default Email;

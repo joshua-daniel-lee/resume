@@ -1,0 +1,12 @@
+.contactButton {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactButton {
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+}
