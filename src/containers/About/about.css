@@ -2,7 +2,7 @@
 .about {
   grid-column: 1 / 5;
   grid-row: 2;
-  height: 75vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
